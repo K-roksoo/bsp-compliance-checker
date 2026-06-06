@@ -1,117 +1,112 @@
-# BSP IT Risk Compliance Checker
+# 🏦 BSP IT Risk Compliance Checker
 
-A web-based compliance assessment tool built around **BSP Circular 1140** (Technology Risk Management Framework). Designed to help IT auditors, risk officers, and compliance teams systematically evaluate an institution's adherence to the Bangko Sentral ng Pilipinas' technology risk requirements.
+> A self-assessment tool for evaluating IT risk controls under **BSP Circular 1140** — Technology Risk Management Framework
 
----
+![BSP Compliance Checker Screenshot](assets/screenshot.png)
 
-## Features
-
-- **24 built-in controls** mapped directly to BSP Circular 1140, grouped across six IT risk domains
-- **Compliance dashboard** — live stats for total controls, compliant count, non-compliant count, and not-assessed count, with an animated progress bar showing overall compliance score
-- **Domain-grouped checklist** — collapsible sections for IT Governance, Cybersecurity, Business Continuity, IT Operations, Third-Party Risk, and Data Management
-- **Per-control status tracking** — mark each control as Compliant, Non-Compliant, or Not Applicable with a single click; toggle off to clear
-- **Risk level badges** — each control is tagged High, Medium, or Low risk for prioritization
-- **Remarks input** — free-text field per control for audit findings, observations, and remediation notes
-- **Export to TXT** — generates a formatted compliance report (date, score, non-compliant items with remarks) and downloads it as a `.txt` file
+<p align="left">
+  <img src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=white" alt="React" />
+  <img src="https://img.shields.io/badge/Vite-6-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Deployed_on-Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel" />
+  <img src="https://img.shields.io/badge/License-MIT-22c55e?style=flat-square" alt="MIT License" />
+</p>
 
 ---
 
-## Tech Stack
+## 🔗 Live Demo
 
-| Layer | Technology |
+**[bsp-compliance-checker.vercel.app](https://bsp-compliance-checker.vercel.app)**
+
+---
+
+## Why This Exists
+
+The Bangko Sentral ng Pilipinas (BSP) issued **Circular 1140** to establish a Technology Risk Management Framework for all BSP-supervised financial institutions (BSFIs). It mandates that banks, thrift institutions, and other covered entities assess and manage risks across IT governance, cybersecurity, business continuity, and third-party dependencies.
+
+In practice, compliance teams conduct these assessments using spreadsheets or paper forms — tools that are slow, error-prone, and hard to aggregate. This project maps all major Circular 1140 IT risk control requirements into a structured, interactive checklist that generates a shareable compliance report in seconds.
+
+It was built specifically to reflect the working reality of IT risk and audit roles in Philippine banking, where familiarity with BSP issuances is a baseline expectation.
+
+---
+
+## ✅ Features
+
+- ✅ **24 mapped controls** — each tied to a specific BSP Circular 1140 requirement across 6 IT risk domains
+- ✅ **Live compliance dashboard** — animated stat cards showing compliant, non-compliant, and pending counts with an overall score
+- ✅ **Domain-grouped checklist** — collapsible sections per IT risk domain for focused review
+- ✅ **Three-state status selector** — mark each control as Compliant, Non-Compliant, or N/A with a single click
+- ✅ **Risk level badges** — High / Medium / Low tagging on every control for prioritization
+- ✅ **Remarks field** — free-text input per control for audit findings and remediation notes
+- ✅ **Export to TXT** — one-click download of a formatted compliance report with date, score, and all non-compliant items
+
+---
+
+## 🛠 Tech Stack
+
+| Technology | Purpose |
 |---|---|
-| Framework | React 19 |
-| Build Tool | Vite 6 |
-| Styling | Plain CSS with CSS custom properties |
-| Language | JavaScript (ES2022+) |
-| Package Manager | npm |
-
-No UI libraries, no CSS frameworks. All styles are handwritten.
+| **React 19** | UI components and state management |
+| **Vite 6** | Build tooling and dev server |
+| **Plain CSS** | All styling — no frameworks or utility classes |
+| **JavaScript ES2022+** | Application logic |
+| **Vercel** | Deployment and hosting |
 
 ---
 
-## Getting Started
+## 🚀 How to Run Locally
 
-### Prerequisites
-
-- Node.js 18 or higher
-- npm 9 or higher
-
-### Installation
+**Prerequisites:** Node.js 18+ and npm 9+
 
 ```bash
-# Clone the repository
-git clone https://github.com/your-username/bsp-compliance-checker.git
+# 1. Clone the repository
+git clone https://github.com/K-roksoo/bsp-compliance-checker.git
 cd bsp-compliance-checker
 
-# Install dependencies
+# 2. Install dependencies
 npm install
-```
 
-### Running Locally
-
-```bash
+# 3. Start the development server
 npm run dev
 ```
 
 Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-### Building for Production
-
 ```bash
+# To build for production
 npm run build
-```
 
-The output will be in the `dist/` folder, ready to be served as a static site.
-
----
-
-## Project Structure
-
-```
-src/
-├── data/
-│   └── controls.js      # 24 BSP Circular 1140 controls with metadata
-├── App.jsx              # Main application component
-├── App.css              # Component styles
-└── index.css            # Global reset and design tokens
+# To preview the production build locally
+npm run preview
 ```
 
 ---
 
-## BSP Circular 1140 Coverage
+## 📋 BSP Controls Covered
 
-The tool covers the following domains from the BSP Technology Risk Management Framework:
+All controls are sourced from **BSP Circular 1140 — Technology Risk Management Framework**.
 
-| Domain | Controls | Key Topics |
-|---|---|---|
-| IT Governance | 4 | Strategic alignment, risk framework, roles, reporting |
-| Cybersecurity | 8 | Access control, patching, incident response, MFA, encryption |
-| Business Continuity | 4 | BCP, DRP, backups, business impact analysis |
-| IT Operations | 3 | Change management, asset inventory, audit logging |
-| Third-Party Risk | 3 | Vendor assessment, SLA management, ongoing monitoring |
-| Data Management | 2 | Data classification, customer data protection |
+| Domain | Controls | Sample Requirements |
+|---|:---:|---|
+| **IT Governance** | 4 | IT strategic plan alignment, risk management framework, defined roles and responsibilities, performance reporting |
+| **Cybersecurity** | 8 | Information security policy, access control, vulnerability management, incident response, MFA, security awareness, network segmentation, data encryption |
+| **Business Continuity** | 4 | Business Continuity Plan (BCP), Disaster Recovery Plan (DRP), backup and restoration procedures, Business Impact Analysis (BIA) |
+| **IT Operations** | 3 | Change management process, IT asset inventory, system and audit log management |
+| **Third-Party Risk** | 3 | IT outsourcing risk assessment, vendor contract and SLA management, ongoing third-party monitoring |
+| **Data Management** | 2 | Data classification and handling, data privacy and customer protection |
 
-> **Disclaimer:** This tool is intended as a self-assessment aid and study reference. It does not constitute official BSP examination findings. Always refer to the latest BSP issuances for authoritative compliance guidance.
-
----
-
-## About This Project
-
-This project was built as part of a **cybersecurity portfolio** targeting roles in the Philippine banking sector — specifically positions in IT audit, technology risk management, and information security governance.
-
-BSP Circular 1140 is the primary regulatory framework governing technology risk management for Bangko Sentral ng Pilipinas-supervised financial institutions. Familiarity with its requirements — and the ability to build practical tooling around them — reflects the kind of domain knowledge expected of IT risk and security professionals in this sector.
-
-The goal was to demonstrate three things:
-
-1. **Regulatory fluency** — understanding what BSP Circular 1140 actually requires, not just that it exists
-2. **Practical engineering** — translating regulatory controls into a usable assessment workflow
-3. **Product thinking** — designing for a real user (an IT auditor working through a checklist) rather than a toy demo
-
-This is a client-side, zero-dependency tool intentionally kept simple: no backend, no database, no authentication. Assessment data lives in the browser session. A production version would integrate with a document management system, support multi-user workflows, and persist findings across sessions.
+> **Note:** This tool is a self-assessment aid and study reference. It does not constitute official BSP examination findings or regulatory advice. Always refer to the latest BSP issuances and consult qualified compliance officers for authoritative guidance.
 
 ---
 
-## License
+## 👤 Author
 
-MIT
+Built by **Noah Alexander Djupvik**
+
+- 🔗 LinkedIn: [linkedin.com/in/noah-alexander-djupvik-381713266](https://www.linkedin.com/in/noah-alexander-djupvik-381713266)
+- 🐙 GitHub: [@K-roksoo](https://github.com/K-roksoo)
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
