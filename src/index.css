@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --c-primary:      #0A2463;
+  --c-primary-dark: #071A4A;
+  --c-accent:       #1A73E8;
+  --c-accent-hover: #1557B0;
+
+  --c-success:        #15803D;
+  --c-success-bg:     #F0FDF4;
+  --c-success-border: #86EFAC;
+  --c-success-text:   #166534;
+
+  --c-danger:        #B91C1C;
+  --c-danger-bg:     #FEF2F2;
+  --c-danger-border: #FCA5A5;
+  --c-danger-text:   #991B1B;
+
+  --c-warning:    #D97706;
+  --c-warning-bg: #FFFBEB;
+
+  --c-risk-high-bg:     #FEF2F2;
+  --c-risk-high-text:   #991B1B;
+  --c-risk-high-border: #FECACA;
+
+  --c-risk-med-bg:     #FFFBEB;
+  --c-risk-med-text:   #92400E;
+  --c-risk-med-border: #FDE68A;
+
+  --c-risk-low-bg:     #F0FDF4;
+  --c-risk-low-text:   #166534;
+  --c-risk-low-border: #BBF7D0;
+
+  --c-bg:      #EEF2F7;
+  --c-surface: #FFFFFF;
+  --c-border:  #E2E8F0;
+  --c-border2: #CBD5E1;
+
+  --c-text:   #0F172A;
+  --c-text-2: #475569;
+  --c-text-3: #94A3B8;
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -1px rgba(0,0,0,0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -2px rgba(0,0,0,0.03);
+
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 14px;
+
+  --t-fast:   150ms ease;
+  --t-normal: 250ms ease;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  background-color: var(--c-bg);
+  color: var(--c-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  line-height: 1.3;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--c-accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
