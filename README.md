@@ -29,19 +29,19 @@ It was built specifically to reflect the working reality of IT risk and audit ro
 
 ---
 
-## ✅ Features
+##  Features
 
-- ✅ **24 mapped controls** — each tied to a specific BSP Circular 1140 requirement across 6 IT risk domains
-- ✅ **Live compliance dashboard** — animated stat cards showing compliant, non-compliant, and pending counts with an overall score
-- ✅ **Domain-grouped checklist** — collapsible sections per IT risk domain for focused review
-- ✅ **Three-state status selector** — mark each control as Compliant, Non-Compliant, or N/A with a single click
-- ✅ **Risk level badges** — High / Medium / Low tagging on every control for prioritization
-- ✅ **Remarks field** — free-text input per control for audit findings and remediation notes
-- ✅ **Export to TXT** — one-click download of a formatted compliance report with date, score, and all non-compliant items
+-  **24 mapped controls** — each tied to a specific BSP Circular 1140 requirement across 6 IT risk domains
+-  **Live compliance dashboard** — animated stat cards showing compliant, non-compliant, and pending counts with an overall score
+-  **Domain-grouped checklist** — collapsible sections per IT risk domain for focused review
+-  **Three-state status selector** — mark each control as Compliant, Non-Compliant, or N/A with a single click
+-  **Risk level badges** — High / Medium / Low tagging on every control for prioritization
+-  **Remarks field** — free-text input per control for audit findings and remediation notes
+-  **Export to TXT** — one-click download of a formatted compliance report with date, score, and all non-compliant items
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 | Technology | Purpose |
 |---|---|
@@ -53,7 +53,7 @@ It was built specifically to reflect the working reality of IT risk and audit ro
 
 ---
 
-## 🚀 How to Run Locally
+##  How to Run Locally
 
 **Prerequisites:** Node.js 18+ and npm 9+
 
@@ -81,7 +81,7 @@ npm run preview
 
 ---
 
-## 📋 BSP Controls Covered
+##  BSP Controls Covered
 
 All controls are sourced from **BSP Circular 1140 — Technology Risk Management Framework**.
 
@@ -98,12 +98,12 @@ All controls are sourced from **BSP Circular 1140 — Technology Risk Management
 
 ---
 
-## 👤 Author
+##  Author
 
 Built by **Noah Alexander Djupvik**
 
-- 🔗 LinkedIn: [linkedin.com/in/noah-alexander-djupvik-381713266](https://www.linkedin.com/in/noah-alexander-djupvik-381713266)
-- 🐙 GitHub: [@K-roksoo](https://github.com/K-roksoo)
+-  LinkedIn: [linkedin.com/in/noah-alexander-djupvik-381713266](https://www.linkedin.com/in/noah-alexander-djupvik-381713266)
+-  GitHub: [@K-roksoo](https://github.com/K-roksoo)
 
 ---
 
