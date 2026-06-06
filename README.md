@@ -1,4 +1,4 @@
-# 🏦 BSP IT Risk Compliance Checker
+#  BSP IT Risk Compliance Checker
 
 > A self-assessment tool for evaluating IT risk controls under **BSP Circular 1140** — Technology Risk Management Framework
 
@@ -13,7 +13,7 @@
 
 ---
 
-## 🔗 Live Demo
+##  Live Demo
 
 **[bsp-compliance-checker.vercel.app](https://bsp-compliance-checker.vercel.app)**
 
